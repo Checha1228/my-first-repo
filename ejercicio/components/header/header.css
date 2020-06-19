@@ -1,0 +1,91 @@
+@import './../../css/styles-pvideo.css';
+
+/*Header*/
+.header {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 24px 0;
+}
+
+.header--content {
+	width: 200px;
+}
+
+.header--content-img,
+.header--menu-img {
+	width: 100%;
+} 
+
+.header--menu {
+	cursor: pointer;
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+
+.header--menu:hover ul, ul:hover {
+	display: block;
+}
+
+.header--menu-profile {
+	margin-right: 16px;
+	width: 60px;
+}
+
+.header--menu-title {
+	color: #FBFFFE;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.header--menu-list {
+	display: none;
+	list-style: none;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 80px;
+}
+
+.header--menu-list li {
+	margin-bottom: 8px;
+}
+
+/*Buscador*/
+.content--seeker {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	max-width: 1300px;
+	margin: 0 auto 0;
+	vertical-align: middle;
+	width: 70%;
+}
+
+.content--seeker-title {
+	color: #FBFFFE;
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.content--seeker-input {
+	background: rgba(251, 255, 254, 0.2);
+	border: 1px solid #FBFFFE;
+	border-radius: 100px;
+	color: #FBFFFE;
+	font-size: 1rem;
+	font-weight: 100;
+	height: 30px;
+	padding: 8px 16px;
+	width: 100%;
+}
+
+.content--seeker-input::placeholder {
+	color: #FBFFFE;
+}
+
+.content--seeker-input:focus {
+	outline: 0;
+}
